@@ -1,11 +1,18 @@
 //Global Variables
 //
-void setup() {} //End setup
+void setup() {
+  print("Hello");
+  print("World");
+  //Character Escapes, tab, new
+} //End setup
 //
-void draw() {} //End Draw
+void draw() {
+} //End Draw
 //
-void keyPresssed() {} //End keyPressed
+void keyPressed() {
+} //End keyPressed
 //
-void mousePressed() {} //End mousePressed
+void mousePressed() {
+} //End mousePressed
 //
 //End MAIN Program
