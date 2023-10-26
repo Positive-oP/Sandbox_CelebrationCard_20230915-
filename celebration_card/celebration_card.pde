@@ -6,6 +6,7 @@ float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
 //PFont ; //All fonts used
 //color ; //colour palette & inks
 int sizeFont, size; //Text Variables
+PImage EidMubarak;
 //
 //
 void setup() {
@@ -43,11 +44,14 @@ void setup() {
   //[fontName] = createFont("[fontSpelling]", [startingFontSize]);
   //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
+  EidMubarak = loadImage("../Saved Pictures/EidMubarak.gif");
   //
 } //End setup
 //
 void draw() {
-
+ rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
+  rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
+  image(EidMubarak,xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   //Drawing Text, copied for each line of text
   //fill( [colourName] ); //ink
   textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / Reference
